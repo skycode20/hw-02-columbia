@@ -21,27 +21,27 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header> -->
 
     <!-- Navigation Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-info sticky-top">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-info sticky-top">
 
     <div class="container px-0">
         <a class="navbar-brand d-lg-inline-block d-none bg-info p-2 mb-0 rounded text-light h1"
             href=" index.html">Skyler
             Rencher</a>
         <a class="navbar-brand d-inline-block d-lg-none bg-info p-2 mb-0 rounded text-light h1"
-            href="index.html">SR</a>
+            href="index.html">SR</a> -->
 
         <!-- Sandwich Menu when width gets smaller-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
 
         <!-- Navigation links and when in sandwich menu it becomes a dropdown list when clicked-->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" href="index.html">About</a>
@@ -56,7 +56,21 @@
         </div>
     </div>
     </nav>
-    </header>
+    </header> -->
+
+    <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
+            <span class="mdc-top-app-bar__title">Skyler Rencher</span>
+          </section>
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
+            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">search</button>
+            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options">more_vert</button>
+          </section>
+        </div>
+      </header>
 
     <!-- Main content goes here-->
     <div class="content" style="background-color: lightgray";>
