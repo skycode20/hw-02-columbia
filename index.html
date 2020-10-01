@@ -65,11 +65,11 @@
         <div class="content" style="background-color: lightgray";>
             <div class="container my-3 p-3">
                 <div class="d-flex row">
-                    <div class="align-items-baseline col-lg-12 text-info">
+                    <div class="align-items-baseline col-lg-12 text-info description-text">
 
                         <!-- This headline centers onto the middle of the page in smaller viewports-->
 
-                        <h1 class="display-4 text-center text-lg-left" style="color: blueviolet; font-family: 'Courier New', Courier, monospace;">About Me</h1>
+                        <h1 class="display-4 text-center" style="color: blueviolet; font-family: 'Courier New', Courier, monospace;">About Me</h1>
                     </div>
                 </div>
 
@@ -77,20 +77,25 @@
                 <hr class="my-3">
 
                 <!-- Profile picture with a caption, it centers on smaller viewports-->
-                <main class="row">
-                    <div class="col-lg-3">
-                        <div class="text-center">
-                            <figure class="figure">
-                                <img src="assets\images\Park Shot.jpg" class="img-fluid img-thumbnail figure-img rounded"
-                                    alt="Picture of Skyler Rencher wearing an overcoat and a Pallor NYC brimless hat." />
-                                <figcaption class="figure-caption">Skyler Rencher</figcaption>
-                            </figure>
+                <div class="row">
+                    <div class="col-lg-6" id="profile-img">
+                        <div>
+                            <div class="text-center">
+                                <figure class="figure">
+                                    <img src="assets\images\Park Shot.jpg" class="img-fluid img-thumbnail figure-img rounded"
+                                        alt="Picture of Skyler Rencher wearing an overcoat and a Pallor NYC brimless hat." />
+                                    <figcaption class="figure-caption">Skyler Rencher</figcaption>
+                                </figure>
+                            </div>
                         </div>
                     </div>
+                </div>
 
                     <!-- Description of Skyler Rencher -->
-                    <article class="col-lg-9 text-secondary">
+                <main class="row">
+                    <article class="col-lg-7 text-secondary card description-text">
 
+                        <div class="card-body">
                         <p class="lead">
                             An entrepreneur, lifelong learner, and an enthusiastic coder. I classically have experience in administration and supervision in the human services, hospitality, and sales industries. Very tech savvy with a natural affinity for technology and the sciences.
                         </p>
@@ -102,6 +107,7 @@
                         <p class="lead">
                             Born in NYC, raised in Long Island; my unique experience with New York City and Long Island has given me the best of both worlds which has given me the ability to relate to all kinds of poeple with different backgrounds. The sky's the limit with the set of skills I'm learning. Perhaps one day developing a very useful mobile application is a feasability for me. 
                         </p>
+                        </div>
 
                     </article>
 
