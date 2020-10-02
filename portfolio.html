@@ -4,139 +4,173 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Javascript (mostly needed to get the toggle button to work)-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"/>
 
-    <!-- Bootstrap Stylesheet-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <!-- Font Awesome-->
-    <script src="https://kit.fontawesome.com/d78de1b3fa.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aladin&display=swap">
+    
     <!-- My own CSS Stylesheet-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets\css\style.css">
 
+    <title>Portfolio</title>
+        
 </head>
 
 <body>
     <header>
-
         <!-- Navigation Bar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-info sticky-top">
-
-            <div class="container px-0">
-                <a class="navbar-brand d-lg-inline-block d-none bg-info p-2 mb-0 rounded text-light h1"
-                    href=" index.html">Skyler
-                    Rencher</a>
-                <a class="navbar-brand d-inline-block d-lg-none bg-info p-2 mb-0 rounded text-light h1"
-                    href="index.html">SR</a>
-
-                <!-- Sandwich Menu when width gets smaller-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Navigation links and when in sandwich menu it becomes a dropdown list when clicked-->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+            <nav class="navbar navbar-expand-lg navbar-light border-bottom border-info sticky-top" style="background-color: lightgray;">
+    
+                <div class="container px-0">
+                    <a class="navbar-brand d-lg-inline-block d-none bg-info p-2 mb-0 rounded text-light h1"
+                        href=" index.html">Skyler
+                        Rencher</a>
+                    <a class="navbar-brand d-inline-block d-lg-none bg-info p-2 mb-0 rounded text-light h1"
+                        href="index.html">SR</a>
+    
+                    <!-- Sandwich Menu -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <!-- Navigation links -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-
-    </header>
+    
+            </nav>
+    
+        </header>
 
     <!-- Main Content to go here-->
-    <div class="content" style="background-color: lightgray";>
-        <div class="container my-3 p-3 border border border-info bg-light">
-            <div class="d-flex row">
-                <div class="align-items-baseline col-lg-12 text-info">
+    <main id="main-container" class="container main-contain">
 
-                    <!-- This headline centers onto the middle of the page in smaller viewports-->
+        <div class="content" style="background-color: lightgray";>
+            <div class="container my-3 p-3">
+                <div class="d-flex row">
+                    <div class="align-items-baseline col-lg-12 text-info description-text">
 
-                    <h1 class="display-4 text-center text-lg-left" style="color: blueviolet; font-family: 'Courier New', Courier, monospace;">Portfolio</h1>
-                </div>
-            </div>
+                        <!-- This headline centers onto the middle of the page in smaller viewports-->
 
-
-            <hr class="my-3">
-
-            <!-- Portfolio images and text go here, images are uniformly sized and center vertically in smaller
-            viewports-->
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-4">
-                    <img src="assets\images\The Amazing Circle.png"
-                        class="rounded m-3 d-block img-fluid img-thumbnail imgsize" alt="Hangman" />
-                    <div class="carousel-caption text-dark h3 outline">The Amazing Circle</div>
-
-                </div>
-
-                <div class="col-lg-4">
-                    <img src="assets\images\Diplomats Fan Page.png"
-                        class="rounded m-3 d-block img-fluid img-thumbnail imgsize" alt="picture of Jim Jones and Cam'ron shaking each other's hand while Juelz Santana is crouching underneath posing for the camera." />
-                    <div class="carousel-caption text-light h3 outline">The Diplomats Fan Page</div>
-                </div>
-
-            </div>
-
-
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-4">
-                    <img src="assets\images\Pallor NYC Site.png"
-                        class="rounded m-3 d-block img-fluid img-thumbnail imgsize" alt="Picture of the Pallor NYC website. It says welcome to Pallor NYC. Be who you are wherever you are above a green brimless hat with the Pallor logo on the front." />
-                    <div class="carousel-caption text-light h3 outline">Pallor NYC Site</div>
+                        <h1 class="display-4 text-center site-header" style="color: blueviolet; font-family: 'Aladin', cursive;">Portfolio</h1>
+                    </div>
                 </div>
 
 
-                <div class="col-lg-4">
-                    <img src="assets\images\Computer Code.jpg"
-                        class="rounded m-3 d-block img-fluid img-thumbnail imgsize" alt="picture of computer code that is tightly packed and hard to read" />
-                    <div class="carousel-caption text-light h3 outline">Code Refactoring</div>
+                <hr class="my-3">
 
+                <!-- Portfolio images and text go here, images are uniformly sized and center vertically in smaller
+                viewports-->
+                
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                        <img src="assets\images\weathertron.png"
+                            class="rounded m-3 d-block img-fluid img-thumbnail imgsize img-styles main-contain" alt="picture of the weather dashboard the weather tron showing weather." />
+                            <a href="https://skycode20.github.io/weather-forecaster-app/" class="carousel-caption text-light h3 outline">
+                                The Weather-Tron
+                            </a>
+                        
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="assets\images\echo-chamber.png"
+                            class="rounded m-3 d-block img-fluid img-thumbnail imgsize img-styles main-contain" alt="picture of Jim Jones and Cam'ron shaking each other's hand while Juelz Santana is crouching underneath posing for the camera." />
+                            <a href="https://qudoki.github.io/group5-project1/splash.html" class="carousel-caption text-light h3 outline">
+                                Echo Chamber
+                            </a>
+                    </div>
+                    
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-4">
-                    <div>
-                        <img src="assets\images\SharkByte Game.png" 
-                            class="rounded m-3 d-block img-fluid img-thumbnail imgsize" alt="SharkByte Game" />
-                        <a href="https://scratch.mit.edu/projects/414257524" class="carousel-caption text-light h3 outline">
-                            SharkByte Game
-                        </a>
+
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                        <img src="assets\images\Pallor NYC Site.png"
+                            class="rounded m-3 d-block img-fluid img-thumbnail imgsize img-styles main-contain" alt="Picture of the Pallor NYC website. It says welcome to Pallor NYC. Be who you are wherever you are above a green brimless hat with the Pallor logo on the front." />
+                            <a href="https://www.pallornyc.com/" class="carousel-caption text-light h3 outline">
+                                Pallor NYC
+                            </a>
                     </div>
 
 
+                    <div class="col-lg-4">
+                        <img src="assets\images\coding-quiz.png"
+                            class="rounded m-3 d-block img-fluid img-thumbnail imgsize img-styles main-contain" alt="picture of computer code that is tightly packed and hard to read" />
+                            <a href="https://skycode20.github.io/coding-quiz/" class="carousel-caption text-dark h3 outline">
+                                Coding Quiz
+                            </a>
+                        
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                        <img src="assets\images\workday-scheduler.png"
+                            class="rounded m-3 d-block img-fluid img-thumbnail imgsize img-styles main-contain" alt="picture of the weather dashboard the weather tron showing weather." />
+                            <a href="https://skycode20.github.io/work-day-scheduler/" class="carousel-caption text-light h3 outline">
+                                Workday Scheduler
+                            </a>
+                        
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="assets\images\SharkByte Game.png"
+                            class="rounded m-3 d-block img-fluid img-thumbnail imgsize img-styles main-contain" alt="picture of Jim Jones and Cam'ron shaking each other's hand while Juelz Santana is crouching underneath posing for the camera." />
+                            <a href="https://scratch.mit.edu/projects/414257524" class="carousel-caption text-light h3 outline">
+                                SharkByte Game
+                            </a>
+                    </div>
+
+                </div>
+
+                <!-- <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                        <div>
+                            <img src="assets\images\SharkByte Game.png" 
+                                class="rounded m-3 d-block img-fluid img-thumbnail imgsize img-styles main-contain" alt="SharkByte Game" />
+                            <a href="https://scratch.mit.edu/projects/414257524" class="carousel-caption text-light h3 outline">
+                                SharkByte Game
+                            </a>
+                        </div>
+
+                    <div class="col-lg-4">
+                            <img src="assets\images\Computer Code.jpg"
+                                class="rounded m-3 d-block img-fluid img-thumbnail imgsize img-styles main-contain" alt="picture of computer code that is tightly packed and hard to read" />
+                            <div class="carousel-caption text-light h3 outline">Code Refactoring</div>
+        
+                        </div>
+                    </div> -->
+
+
                 </div>
             </div>
-        </div>
+            </div>
 
-    </div>
+        </div>
+    </main>
 
     <!-- Page Footer-->
     <footer class="footer">
@@ -158,6 +192,21 @@
 
         </div>
     </footer>
+
+    <!-- External Javascript links-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/d78de1b3fa.js" crossorigin="anonymous"></script>
 
 </body>
 
