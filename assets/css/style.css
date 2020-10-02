@@ -19,6 +19,12 @@
     margin: auto;
 }
 
+.centered {
+    text-align: center;
+    text-shadow: cadetblue 10px 15px 15px;
+    
+}
+
 .site-header {
     font-family: 'Roboto Mono', monospace;
     text-shadow: black 10px 10px 15px;
