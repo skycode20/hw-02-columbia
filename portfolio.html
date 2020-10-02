@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aladin&display=swap">
     
     <!-- My own CSS Stylesheet-->
     <link rel="stylesheet" href="assets\css\style.css">
@@ -22,112 +24,116 @@
 
 <body>
     <header>
-
         <!-- Navigation Bar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-info sticky-top">
-
-            <div class="container px-0">
-                <a class="navbar-brand d-lg-inline-block d-none bg-info p-2 mb-0 rounded text-light h1"
-                    href=" index.html">Skyler
-                    Rencher</a>
-                <a class="navbar-brand d-inline-block d-lg-none bg-info p-2 mb-0 rounded text-light h1"
-                    href="index.html">SR</a>
-
-                <!-- Sandwich Menu when width gets smaller-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Navigation links and when in sandwich menu it becomes a dropdown list when clicked-->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+            <nav class="navbar navbar-expand-lg navbar-light border-bottom border-info sticky-top" style="background-color: lightgray;">
+    
+                <div class="container px-0">
+                    <a class="navbar-brand d-lg-inline-block d-none bg-info p-2 mb-0 rounded text-light h1"
+                        href=" index.html">Skyler
+                        Rencher</a>
+                    <a class="navbar-brand d-inline-block d-lg-none bg-info p-2 mb-0 rounded text-light h1"
+                        href="index.html">SR</a>
+    
+                    <!-- Sandwich Menu -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <!-- Navigation links -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-
-    </header>
+    
+            </nav>
+    
+        </header>
 
     <!-- Main Content to go here-->
-    <div class="content" style="background-color: lightgray";>
-        <div class="container my-3 p-3 border border border-info bg-light">
-            <div class="d-flex row">
-                <div class="align-items-baseline col-lg-12 text-info">
+    <main id="main-container" class="container main-contain">
 
-                    <!-- This headline centers onto the middle of the page in smaller viewports-->
+        <div class="content" style="background-color: lightgray";>
+            <div class="container my-3 p-3">
+                <div class="d-flex row">
+                    <div class="align-items-baseline col-lg-12 text-info description-text">
 
-                    <h1 class="display-4 text-center text-lg-left" style="color: blueviolet; font-family: 'Courier New', Courier, monospace;">Portfolio</h1>
-                </div>
-            </div>
+                        <!-- This headline centers onto the middle of the page in smaller viewports-->
 
-
-            <hr class="my-3">
-
-            <!-- Portfolio images and text go here, images are uniformly sized and center vertically in smaller
-            viewports-->
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-4">
-                    <img src="assets\images\The Amazing Circle.png"
-                        class="rounded m-3 d-block img-fluid img-thumbnail imgsize" alt="Hangman" />
-                    <div class="carousel-caption text-dark h3 outline">The Amazing Circle</div>
-
-                </div>
-
-                <div class="col-lg-4">
-                    <img src="assets\images\Diplomats Fan Page.png"
-                        class="rounded m-3 d-block img-fluid img-thumbnail imgsize" alt="picture of Jim Jones and Cam'ron shaking each other's hand while Juelz Santana is crouching underneath posing for the camera." />
-                    <div class="carousel-caption text-light h3 outline">The Diplomats Fan Page</div>
-                </div>
-
-            </div>
-
-
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-4">
-                    <img src="assets\images\Pallor NYC Site.png"
-                        class="rounded m-3 d-block img-fluid img-thumbnail imgsize" alt="Picture of the Pallor NYC website. It says welcome to Pallor NYC. Be who you are wherever you are above a green brimless hat with the Pallor logo on the front." />
-                    <div class="carousel-caption text-light h3 outline">Pallor NYC Site</div>
+                        <h1 class="display-4 text-center site-header" style="color: blueviolet; font-family: 'Aladin', cursive;">Portfolio</h1>
+                    </div>
                 </div>
 
 
-                <div class="col-lg-4">
-                    <img src="assets\images\Computer Code.jpg"
-                        class="rounded m-3 d-block img-fluid img-thumbnail imgsize" alt="picture of computer code that is tightly packed and hard to read" />
-                    <div class="carousel-caption text-light h3 outline">Code Refactoring</div>
+                <hr class="my-3">
+
+                <!-- Portfolio images and text go here, images are uniformly sized and center vertically in smaller
+                viewports-->
+                
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                        <img src="assets\images\The Amazing Circle.png"
+                            class="rounded m-3 d-block img-fluid img-thumbnail imgsize img-styles main-contain" alt="Hangman" />
+                        <div class="carousel-caption text-dark h3 outline">The Amazing Circle</div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="assets\images\Diplomats Fan Page.png"
+                            class="rounded m-3 d-block img-fluid img-thumbnail imgsize img-styles main-contain" alt="picture of Jim Jones and Cam'ron shaking each other's hand while Juelz Santana is crouching underneath posing for the camera." />
+                        <div class="carousel-caption text-light h3 outline">The Diplomats Fan Page</div>
+                    </div>
 
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-4">
-                    <div>
-                        <img src="assets\images\SharkByte Game.png" 
-                            class="rounded m-3 d-block img-fluid img-thumbnail imgsize" alt="SharkByte Game" />
-                        <a href="https://scratch.mit.edu/projects/414257524" class="carousel-caption text-light h3 outline">
-                            SharkByte Game
-                        </a>
+
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                        <img src="assets\images\Pallor NYC Site.png"
+                            class="rounded m-3 d-block img-fluid img-thumbnail imgsize img-styles main-contain" alt="Picture of the Pallor NYC website. It says welcome to Pallor NYC. Be who you are wherever you are above a green brimless hat with the Pallor logo on the front." />
+                        <div class="carousel-caption text-light h3 outline">Pallor NYC Site</div>
                     </div>
 
 
+                    <div class="col-lg-4">
+                        <img src="assets\images\Computer Code.jpg"
+                            class="rounded m-3 d-block img-fluid img-thumbnail imgsize img-styles main-contain" alt="picture of computer code that is tightly packed and hard to read" />
+                        <div class="carousel-caption text-light h3 outline">Code Refactoring</div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                        <div>
+                            <img src="assets\images\SharkByte Game.png" 
+                                class="rounded m-3 d-block img-fluid img-thumbnail imgsize img-styles main-contain" alt="SharkByte Game" />
+                            <a href="https://scratch.mit.edu/projects/414257524" class="carousel-caption text-light h3 outline">
+                                SharkByte Game
+                            </a>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
+        </div>
+    </main>
 
     <!-- Page Footer-->
     <footer class="footer">
