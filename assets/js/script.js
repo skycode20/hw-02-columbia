@@ -45,8 +45,18 @@ const isValid = () => {
 
 class User {
     constructor(name, email, message) {
-    this.name = name;
-    this.email = email;
-    this.message = message;
+        this.name = name;
+        this.email = email;
+        this.message = message;
     }
-   }
+}
+
+const sendContact = () => {
+    if (isValid()) {
+        let usr = new User(name.value, email.value, message.value);
+
+        alert(`${usr.name} thanks for reaching out. I will get back to you soon!`);
+    } else {
+        alert("There was an error. Please try again.")
+    }
+}
