@@ -59,7 +59,7 @@ $(document).ready(() => {
 
             alert(`${usr.name} thanks for reaching out. I will get back to you soon!`);
         } else {
-            alert("There was an error. Please try again.")
+            console.log("There was an error with your submission. Please try again.")
         }
     }
 
